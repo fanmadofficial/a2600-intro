@@ -1,0 +1,342 @@
+type: VCS Game Maker Project
+format-version: 1
+generation-time: 2026-08-29T14:54:54.809Z
+configuration:
+  showScore: false
+  showBlankLines: true
+  enableSpriteColors: true
+  enablePfColors: true
+  enableSuperchip: false
+  enableOptimizationSpeed: false
+  enableInlineRand: false
+  enableRand16: true
+  enableCycleScore: false
+  pfres: 24
+  romSize: 4k
+  scoreFont: ""
+  muteAllAudio: false
+  showVariableComments: true
+  projectTitle: atari 2600 game intro
+  projectDescription: just a simple intro for a2600 homebrew games
+  projectDeveloper: fanmad
+  projectVersion: "1"
+  projectEmail: dawidfaron445@gmail.com
+blockly-workspace: >-
+  <xml xmlns="https://developers.google.com/blockly/xml">
+    <block type="event_block" id="R@HwrW(8,_QnRNI$h4@=" x="330" y="197">
+      <field name="EVENT">system_start</field>
+      <statement name="DO">
+        <block type="background_set" id="AuY#S.p5o5i-3=8j%q0h">
+          <value name="VALUE">
+            <shadow type="background_select" id="-2KWW.uxe13,s]I2l#I^">
+              <field name="VAR">1</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="background_set_color" id="0:rqo3g`9Rcy/?8BY=ye">
+              <field name="VAR">COLUBK</field>
+              <value name="VALUE">
+                <shadow type="color_get" id="L;#E)GpT-jxiR:H;i}xG">
+                  <field name="COLOR">0</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="music_play_song" id="o%/Th^7Pfa3(c1pqs%+K">
+                  <field name="SONG">1</field>
+                  <field name="LOOP">FALSE</field>
+                  <next>
+                    <block type="controls_repeat_ext" id="6X_oKhiFX}gi7i,wXp8@">
+                      <value name="TIMES">
+                        <block type="math_number" id="#WmJm6(N^js8MYmj19E2">
+                          <field name="NUM">20</field>
+                        </block>
+                      </value>
+                      <statement name="DO">
+                        <block type="wait_frames" id="u6h_T:{%YZ_U5P!aw5^}">
+                          <value name="FRAMES">
+                            <shadow type="math_number" id="8-,.w@J0e{CdwISsO!v}">
+                              <field name="NUM">255</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="wait_frames" id="lhSLSy3itIG%bmSfgR$x">
+                              <value name="FRAMES">
+                                <shadow type="math_number" id="i(6{9},9,Pbp:K5#9bmk">
+                                  <field name="NUM">255</field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="wait_frames" id="(x*[Z*B@YtivbdsIg[S|">
+                                  <value name="FRAMES">
+                                    <shadow type="math_number" id="iVz7+fDq;#7P+}Z+}l3K">
+                                      <field name="NUM">255</field>
+                                    </shadow>
+                                  </value>
+                                  <next>
+                                    <block type="wait_frames" id="q|aVA5%j-9f$qWLBSDJc">
+                                      <value name="FRAMES">
+                                        <shadow type="math_number" id="1Jgm?+UDS:.q8]9f{*/V">
+                                          <field name="NUM">255</field>
+                                        </shadow>
+                                      </value>
+                                      <next>
+                                        <block type="wait_frames" id="(Jh@R=Y=L/2qPrV0@jHZ">
+                                          <value name="FRAMES">
+                                            <shadow type="math_number" id="^93!O,(fauWV|@u*wMq_">
+                                              <field name="NUM">255</field>
+                                            </shadow>
+                                          </value>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </statement>
+                      <next>
+                        <block type="background_set" id="cI(Tm6V|zFjvC@~~Sonb">
+                          <value name="VALUE">
+                            <shadow type="background_select" id="PRQNWvtkY5!G%5|p=V@N">
+                              <field name="VAR">2</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="wait_frames" id="Rwk^;A9hg(9vXZ|P=0-7">
+                              <value name="FRAMES">
+                                <shadow type="math_number" id="*f49Ch]8*0Z^/xYT|k=T">
+                                  <field name="NUM">255</field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="wait_frames" id="$fw_[EwRR`p;h(pqM*g2">
+                                  <value name="FRAMES">
+                                    <shadow type="math_number" id="xAq+,_T_a_sU#c]fFh)i">
+                                      <field name="NUM">255</field>
+                                    </shadow>
+                                  </value>
+                                  <next>
+                                    <block type="background_set" id=".;hP[3_`q^t_Gg~piK?d">
+                                      <value name="VALUE">
+                                        <shadow type="background_select" id="SwfZ+AMVQn~-8#0+f^O:">
+                                          <field name="VAR">3</field>
+                                        </shadow>
+                                      </value>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+  </xml>
+player-0:
+  animations:
+    - id: 0
+      name: Example1
+      frames:
+        - id: 2
+          duration: 10
+          pixels: |-
+            ........
+            ........
+            ........
+            ........
+            ........
+            ........
+            ........
+            ........
+          rowColors:
+            - 14
+            - 14
+            - 14
+            - 14
+            - 14
+            - 14
+            - 14
+            - 14
+player-1:
+  animations:
+    - id: 0
+      name: Example1
+      frames:
+        - id: 1
+          duration: 10
+          pixels: |-
+            ........
+            ........
+            ........
+            ........
+            ........
+            ........
+            ........
+            ........
+          rowColors:
+            - 14
+            - 14
+            - 14
+            - 14
+            - 14
+            - 14
+            - 14
+            - 14
+backgrounds:
+  backgrounds:
+    - id: 1
+      name: Test 1
+      pixels: |-
+        ......X...XXX...X...XX...X......
+        .....X.X...X...X.X..X.X..X......
+        ................................
+        ......XX.....X...XXX.XXX........
+        .......XX...X....X.X.X.X........
+        ......XXXX..XXX..XXX.XXX........
+        .....XXXXXXXXXXXXXXXXXXXXXXX....
+        ....XXXXXXXXXXXXXXXXXXXXXXXXX...
+        ...XXXXXXXXXXXXXXXXXXXXXXXXXXX..
+        ..XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+        ..XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+      rowColors:
+        - 14
+        - 14
+        - 14
+        - 14
+        - 14
+        - 14
+        - 4
+        - 6
+        - 8
+        - 36
+        - 34
+    - id: 2
+      name: Background 2
+      pixels: |-
+        ......X...XXX...X...XX...X......
+        .....X.X...X...X.X..X.X..X......
+        ................................
+        ......XX.....X...XXX.XXX........
+        .......XX...X....X.X.X.X........
+        ......XXXX..XXX..XXX.XXX........
+        .....XXXXXXXXXXXXXXXXXXXXXXX....
+        ....XXXXXXXXXXXXXXXXXXXXXXXXX...
+        ...XXXXXXXXXXXXXXXXXXXXXXXXXXX..
+        ..XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.
+        ................................
+      rowColors:
+        - 6
+        - 6
+        - 14
+        - 6
+        - 6
+        - 6
+        - 2
+        - 4
+        - 6
+        - 34
+        - 32
+    - id: 3
+      name: Background 3
+      pixels: |-
+        ................................
+        ................................
+        ................................
+        ................................
+        ................................
+        ................................
+        ................................
+        ................................
+        ................................
+        ................................
+        ................................
+      rowColors:
+        - 14
+        - 14
+        - 14
+        - 14
+        - 14
+        - 14
+        - 14
+        - 14
+        - 14
+        - 14
+        - 14
+score-font: null
+squish-custom-score-font: null
+data-tables: null
+text-strings: null
+sound-effects:
+  soundEffects:
+    - id: 1
+      name: Example blip
+      audc: "4"
+      audf: 20
+      audv: 15
+      duration: 9
+      envelope: false
+      envelopeAttack: 0
+      envelopeDecay: 0
+      envelopeSustain: 100
+      envelopeRelease: 4
+      arpeggio: false
+      arpeggioDivision: 8
+      arpeggioInterval: 3
+      arpeggioRange: 0
+      color: null
+      isInstrument: false
+songs:
+  songs:
+    - id: 1
+      name: tada
+      tempo: 140
+      loop: false
+      patternPreviewLoop: false
+      patterns:
+        - id: 1
+          name: Pattern 1
+          tempo: 74
+          useOwnTempo: true
+          stepCount: 8
+          tracks:
+            - id: 1
+              soundEffectId: 1
+              channel: 0
+              notes:
+                - step: 0
+                  midi: 91
+                  audf: 9
+                  length: 32
+                - step: 32
+                  midi: 91
+                  audf: 9
+                  length: 32
+            - id: 2
+              soundEffectId: 1
+              channel: 1
+              notes:
+                - step: 0
+                  midi: 85
+                  audf: 13
+                  length: 32
+                - step: 32
+                  midi: 88
+                  audf: 11
+                  length: 32
+      sequence:
+        - id: 1
+          patternId: 1
+          count: 1
+  instrumentColors: {}
+  subdivision: 1
+  noteLengthUnitsMigrated: true
